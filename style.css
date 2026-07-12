@@ -7,8 +7,7 @@
 
   --border-color: #eef0f3;
 
-  --card-shadow:
-    0 15px 50px rgba(20, 24, 31, 0.11);
+  --card-shadow: 0 15px 50px rgba(20, 24, 31, 0.11);
 
   --whatsapp: #25d366;
   --whatsapp-dark: #1ebc59;
@@ -45,7 +44,6 @@ html {
 }
 
 body {
- body {
   margin: 0;
   min-height: 100vh;
 
@@ -69,6 +67,16 @@ body {
   color: var(--text-primary);
 
   background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.2),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(37, 211, 102, 0.15),
+      transparent 35%
+    ),
     linear-gradient(
       -45deg,
       #6c47ff,
@@ -78,53 +86,49 @@ body {
       #ff9f43
     );
 
-  background-size: 400% 400%;
+  background-size:
+    100% 100%,
+    100% 100%,
+    400% 400%;
 
-  animation:
-    animated-background
-    12s ease
-    infinite;
+  animation: animated-background 12s ease infinite;
 }
 
 @keyframes animated-background {
   0% {
-    background-position: 0% 50%;
+    background-position:
+      center,
+      center,
+      0% 50%;
   }
 
   25% {
-    background-position: 50% 100%;
+    background-position:
+      center,
+      center,
+      50% 100%;
   }
 
   50% {
-    background-position: 100% 50%;
+    background-position:
+      center,
+      center,
+      100% 50%;
   }
 
   75% {
-    background-position: 50% 0%;
+    background-position:
+      center,
+      center,
+      50% 0%;
   }
 
   100% {
-    background-position: 0% 50%;
+    background-position:
+      center,
+      center,
+      0% 50%;
   }
-}
-    radial-gradient(
-      circle at bottom right,
-      rgba(37, 211, 102, 0.09),
-      transparent 35%
-    ),
-    var(--bg-color);
-
-  font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-
-  color: var(--text-primary);
 }
 
 /* Main card */
@@ -143,18 +147,18 @@ body {
 
   text-align: center;
 
-  background:
-    rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.86);
 
-  border:
-    1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.55);
 
   border-radius: var(--radius-large);
 
-  box-shadow: var(--card-shadow);
+  box-shadow:
+    0 20px 60px
+    rgba(0, 0, 0, 0.22);
 
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 
   animation:
     card-entry 0.7s
@@ -165,16 +169,12 @@ body {
 @keyframes card-entry {
   from {
     opacity: 0;
-    transform:
-      translateY(30px)
-      scale(0.96);
+    transform: translateY(30px) scale(0.96);
   }
 
   to {
     opacity: 1;
-    transform:
-      translateY(0)
-      scale(1);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -196,12 +196,10 @@ body {
       135deg,
       var(--whatsapp),
       var(--instapay),
-      #dd2a7b
+      var(--instagram-two)
     );
 
-  box-shadow:
-    0 12px 30px
-    rgba(108, 71, 255, 0.25);
+  box-shadow: 0 12px 30px rgba(108, 71, 255, 0.25);
 
   opacity: 0;
 
@@ -222,25 +220,15 @@ body {
   position: absolute;
   inset: -8px;
 
-  border:
-    1px solid
-    rgba(108, 71, 255, 0.13);
-
+  border: 1px solid rgba(108, 71, 255, 0.2);
   border-radius: 50%;
 
-  animation:
-    profile-pulse 2.5s ease-in-out
-    infinite;
+  animation: profile-pulse 2.5s ease-in-out infinite;
 }
 
 .avatar-wrap:hover {
-  transform:
-    translateY(-5px)
-    scale(1.04);
-
-  box-shadow:
-    0 18px 38px
-    rgba(108, 71, 255, 0.32);
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 18px 38px rgba(108, 71, 255, 0.32);
 }
 
 .avatar {
@@ -249,39 +237,27 @@ body {
 
   display: block;
 
-  border:
-    3px solid #ffffff;
-
+  border: 3px solid #ffffff;
   border-radius: 50%;
 
   object-fit: cover;
-
   background: var(--border-color);
 }
 
 @keyframes avatar-entry {
   from {
     opacity: 0;
-    transform:
-      translateY(-20px)
-      scale(0.75)
-      rotate(-8deg);
+    transform: translateY(-20px) scale(0.75) rotate(-8deg);
   }
 
   70% {
     opacity: 1;
-    transform:
-      translateY(4px)
-      scale(1.05)
-      rotate(2deg);
+    transform: translateY(4px) scale(1.05) rotate(2deg);
   }
 
   to {
     opacity: 1;
-    transform:
-      translateY(0)
-      scale(1)
-      rotate(0);
+    transform: translateY(0) scale(1) rotate(0);
   }
 }
 
@@ -305,7 +281,6 @@ body {
 
   font-size: 24px;
   font-weight: 750;
-
   letter-spacing: -0.025em;
 
   opacity: 0;
@@ -386,10 +361,10 @@ body {
   font-size: 16px;
   font-weight: 650;
 
+  text-decoration: none;
   cursor: pointer;
 
   opacity: 0;
-
   transform: translateY(25px);
 
   transition:
@@ -422,7 +397,6 @@ body {
     );
 
   transform: skewX(-22deg);
-
   transition: left 0.6s ease;
 }
 
@@ -436,9 +410,12 @@ body {
 }
 
 .btn:active {
-  transform:
-    translateY(0)
-    scale(0.96);
+  transform: translateY(0) scale(0.96);
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
 }
 
 /* Button entrance animation */
@@ -453,16 +430,12 @@ body {
 @keyframes button-entry {
   from {
     opacity: 0;
-    transform:
-      translateY(26px)
-      scale(0.94);
+    transform: translateY(26px) scale(0.94);
   }
 
   to {
     opacity: 1;
-    transform:
-      translateY(0)
-      scale(1);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -474,38 +447,28 @@ body {
 
   flex-shrink: 0;
 
-  transition:
-    transform 0.35s ease;
+  transition: transform 0.35s ease;
 }
 
 .btn:hover .icon {
-  animation:
-    icon-bounce 0.5s ease;
+  animation: icon-bounce 0.5s ease;
 }
 
 @keyframes icon-bounce {
   0% {
-    transform:
-      scale(1)
-      rotate(0);
+    transform: scale(1) rotate(0);
   }
 
   45% {
-    transform:
-      scale(1.22)
-      rotate(-8deg);
+    transform: scale(1.22) rotate(-8deg);
   }
 
   75% {
-    transform:
-      scale(0.95)
-      rotate(4deg);
+    transform: scale(0.95) rotate(4deg);
   }
 
   100% {
-    transform:
-      scale(1)
-      rotate(0);
+    transform: scale(1) rotate(0);
   }
 }
 
@@ -513,54 +476,36 @@ body {
 
 .btn-whatsapp {
   background: var(--whatsapp);
-
-  box-shadow:
-    0 8px 22px
-    rgba(37, 211, 102, 0.3);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.3);
 }
 
 .btn-whatsapp:hover {
   background: var(--whatsapp-dark);
-
-  box-shadow:
-    0 12px 28px
-    rgba(37, 211, 102, 0.4);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
 }
 
 /* InstaPay */
 
 .btn-instapay {
   background: var(--instapay);
-
-  box-shadow:
-    0 8px 22px
-    rgba(108, 71, 255, 0.3);
+  box-shadow: 0 8px 22px rgba(108, 71, 255, 0.3);
 }
 
 .btn-instapay:hover {
   background: var(--instapay-dark);
-
-  box-shadow:
-    0 12px 28px
-    rgba(108, 71, 255, 0.4);
+  box-shadow: 0 12px 28px rgba(108, 71, 255, 0.4);
 }
 
 /* Facebook */
 
 .btn-facebook {
   background: var(--facebook);
-
-  box-shadow:
-    0 8px 22px
-    rgba(24, 119, 242, 0.3);
+  box-shadow: 0 8px 22px rgba(24, 119, 242, 0.3);
 }
 
 .btn-facebook:hover {
   background: var(--facebook-dark);
-
-  box-shadow:
-    0 12px 28px
-    rgba(24, 119, 242, 0.4);
+  box-shadow: 0 12px 28px rgba(24, 119, 242, 0.4);
 }
 
 /* Instagram */
@@ -575,53 +520,38 @@ body {
       var(--instagram-four)
     );
 
-  box-shadow:
-    0 8px 22px
-    rgba(221, 42, 123, 0.3);
+  box-shadow: 0 8px 22px rgba(221, 42, 123, 0.3);
 }
 
 .btn-instagram:hover {
-  box-shadow:
-    0 12px 28px
-    rgba(221, 42, 123, 0.42);
+  box-shadow: 0 12px 28px rgba(221, 42, 123, 0.42);
 }
 
 /* TikTok */
 
 .btn-tiktok {
   background: var(--tiktok);
-
-  box-shadow:
-    0 8px 22px
-    rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
 }
 
 .btn-tiktok:hover {
   background: var(--tiktok-dark);
 
   box-shadow:
-    -5px 10px 25px
-    rgba(37, 244, 238, 0.25),
-    5px 10px 25px
-    rgba(254, 44, 85, 0.25);
+    -5px 10px 25px rgba(37, 244, 238, 0.25),
+    5px 10px 25px rgba(254, 44, 85, 0.25);
 }
 
 /* X */
 
 .btn-x {
   background: var(--x-color);
-
-  box-shadow:
-    0 8px 22px
-    rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
 }
 
 .btn-x:hover {
   background: var(--x-dark);
-
-  box-shadow:
-    0 12px 28px
-    rgba(0, 0, 0, 0.34);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
 }
 
 /* Hidden buttons */
@@ -653,9 +583,7 @@ body {
 
   white-space: nowrap;
 
-  transform:
-    translateX(-50%)
-    translateY(10px);
+  transform: translateX(-50%) translateY(10px);
 
   transition:
     opacity 0.25s ease,
@@ -664,10 +592,7 @@ body {
 
 .toast.show {
   opacity: 1;
-
-  transform:
-    translateX(-50%)
-    translateY(25px);
+  transform: translateX(-50%) translateY(25px);
 }
 
 /* Footer */
@@ -699,10 +624,7 @@ body {
 
 /* Error message */
 
-.error-card .avatar-wrap {
-  display: none;
-}
-
+.error-card .avatar-wrap,
 .error-card .actions {
   display: none;
 }
@@ -728,11 +650,7 @@ body {
 
   .card {
     margin-top: 12px;
-
-    padding:
-      35px 20px
-      28px;
-
+    padding: 35px 20px 28px;
     border-radius: 24px;
   }
 
@@ -754,6 +672,7 @@ body {
 /* Reduce animations when requested */
 
 @media (prefers-reduced-motion: reduce) {
+  body,
   .card,
   .avatar-wrap,
   .name,
