@@ -607,23 +607,9 @@ body {
 
   letter-spacing: 0.03em;
 
-  text-align: center;
-
   animation:
     footer-entry 0.7s
     0.8s ease both;
-}
-
-.footer a {
-  color: var(--instapay);
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.footer a:hover {
-  color: var(--instagram-two);
-  text-decoration: underline;
 }
 
 @keyframes footer-entry {
