@@ -8,6 +8,11 @@
   --border-color: #eef0f3;
 
   --card-shadow: 0 15px 50px rgba(20, 24, 31, 0.11);
+  --phone: #0f766e;
+--phone-dark: #0b5f59;
+
+--cv: #dc2626;
+--cv-dark: #b91c1c;
 
   --whatsapp: #25d366;
   --whatsapp-dark: #1ebc59;
@@ -470,6 +475,30 @@ body {
   100% {
     transform: scale(1) rotate(0);
   }
+}
+/* Phone */
+
+.btn-phone {
+  background: var(--phone);
+  box-shadow: 0 8px 22px rgba(15, 118, 110, 0.3);
+}
+
+.btn-phone:hover {
+  background: var(--phone-dark);
+  box-shadow: 0 12px 28px rgba(15, 118, 110, 0.4);
+}
+
+
+/* CV */
+
+.btn-cv {
+  background: var(--cv);
+  box-shadow: 0 8px 22px rgba(220, 38, 38, 0.3);
+}
+
+.btn-cv:hover {
+  background: var(--cv-dark);
+  box-shadow: 0 12px 28px rgba(220, 38, 38, 0.4);
 }
 
 /* WhatsApp */
