@@ -44,6 +44,14 @@ const actionsElement =
 
 const toastElement =
   document.getElementById("toast");
+const phoneButton =
+  document.getElementById("phoneBtn");
+
+const phone2Button =
+  document.getElementById("phone2Btn");
+
+const cvButton =
+  document.getElementById("cvBtn");
 
 const whatsappButton =
   document.getElementById("whatsappBtn");
@@ -241,7 +249,21 @@ function renderProfile(profile) {
    SETUP ALL BUTTONS
 ============================================================ */
 
+
 function setupButtons(profile) {
+     setupPhoneButton(
+    phoneButton,
+    profile.phone
+  );
+
+  setupPhoneButton(
+    phone2Button,
+    profile.phone2
+  );
+
+  setupCVButton(
+    profile.cv
+  );
   setupWhatsAppButton(
     profile.whatsapp
   );
@@ -271,6 +293,49 @@ function setupButtons(profile) {
   );
 }
 
+/* ============================================================
+   PHONE BUTTON
+============================================================ */
+
+function setupPhoneButton(button, phoneNumber) {
+
+  if (!phoneNumber) {
+    hideButton(button);
+    return;
+  }
+
+  button.addEventListener(
+    "click",
+    function callPhone() {
+
+      window.location.href =
+        `tel:${String(phoneNumber).trim()}`;
+
+    }
+  );
+}
+
+
+/* ============================================================
+   CV BUTTON
+============================================================ */
+
+function setupCVButton(cvUrl) {
+
+  if (!cvUrl) {
+    hideButton(cvButton);
+    return;
+  }
+
+  cvButton.addEventListener(
+    "click",
+    function openCV() {
+
+      openExternalLink(cvUrl);
+
+    }
+  );
+}
 /* ============================================================
    WHATSAPP BUTTON
 ============================================================ */
