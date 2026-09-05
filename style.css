@@ -696,4 +696,18 @@ transform: translateY(0);
   .avatar-wrap::before {
     display: none;
   }
+  /* ===== FORCE PROFILE CONTENT TO SHOW ===== */
+
+.avatar-wrap,
+.name,
+.job,
+.btn {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Keep hidden buttons hidden */
+.btn.hidden {
+  display: none !important;
+}
 }
