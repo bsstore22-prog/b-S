@@ -71,19 +71,7 @@ body {
 
   color: var(--text-primary);
 
-background:
-  radial-gradient(
-    circle at top left,
-    rgba(217, 107, 39, 0.18),
-    transparent 35%
-  ),
-  linear-gradient(
-    135deg,
-    #120907 0%,
-    #2a130d 35%,
-    #4b2112 65%,
-    #8f3f17 100%
-  );
+
 
 @keyframes animated-background {
   0% {
@@ -192,7 +180,7 @@ background:
 
   box-shadow: 0 12px 30px rgba(108, 71, 255, 0.25);
 
-  opacity: 0;
+  opacity: 1;
 
   animation:
     avatar-entry 0.8s
@@ -274,7 +262,7 @@ background:
   font-weight: 750;
   letter-spacing: -0.025em;
 
-  opacity: 0;
+  opacity: 1;
 
   animation:
     information-entry 0.6s
@@ -295,7 +283,7 @@ background:
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  opacity: 0;
+  opacity: 1;
 
   animation:
     information-entry 0.6s
@@ -355,8 +343,8 @@ background:
   text-decoration: none;
   cursor: pointer;
 
-  opacity: 0;
-  transform: translateY(25px);
+ opacity: 1;
+transform: translateY(0);
 
   transition:
     transform 0.2s ease,
