@@ -71,33 +71,19 @@ body {
 
   color: var(--text-primary);
 
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(255, 255, 255, 0.2),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(37, 211, 102, 0.15),
-      transparent 35%
-    ),
-    linear-gradient(
-      -45deg,
-      #6c47ff,
-      #ff4f81,
-      #00c6ff,
-      #25d366,
-      #ff9f43
-    );
-
-  background-size:
-    100% 100%,
-    100% 100%,
-    400% 400%;
-
-  animation: animated-background 12s ease infinite;
-}
+background:
+  radial-gradient(
+    circle at top left,
+    rgba(217, 107, 39, 0.18),
+    transparent 35%
+  ),
+  linear-gradient(
+    135deg,
+    #120907 0%,
+    #2a130d 35%,
+    #4b2112 65%,
+    #8f3f17 100%
+  );
 
 @keyframes animated-background {
   0% {
