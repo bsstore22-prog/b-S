@@ -626,19 +626,22 @@ body {
 
 /* Footer */
 
-.footer {
-  margin-top: 24px;
+.footer a {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #6c47ff, #25d366);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(108, 71, 255, 0.25);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
 
-  color: var(--text-secondary);
-
-  font-size: 12px;
-  font-weight: 500;
-
-  letter-spacing: 0.03em;
-
-  animation:
-    footer-entry 0.7s
-    0.8s ease both;
+.footer a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(108, 71, 255, 0.35);
 }
 
 @keyframes footer-entry {
