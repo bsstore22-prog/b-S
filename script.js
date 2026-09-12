@@ -73,6 +73,23 @@ const tiktokButton =
 
 const xButton =
   document.getElementById("xBtn");
+const scholarButton =
+  document.getElementById("scholarBtn");
+
+const linkedinButton =
+  document.getElementById("linkedinBtn");
+
+const websiteButton =
+  document.getElementById("websiteBtn");
+
+const universityProfileButton =
+  document.getElementById("universityProfileBtn");
+
+const universityEmailButton =
+  document.getElementById("universityEmailBtn");
+
+const personalEmailButton =
+  document.getElementById("personalEmailBtn");
 
 /* ============================================================
    LOAD PROFILES.JSON
@@ -291,6 +308,35 @@ function setupButtons(profile) {
     xButton,
     profile.x
   );
+   setupSocialButton(
+  scholarButton,
+  profile.scholar
+);
+
+setupSocialButton(
+  linkedinButton,
+  profile.linkedin
+);
+
+setupSocialButton(
+  websiteButton,
+  profile.website
+);
+
+setupSocialButton(
+  universityProfileButton,
+  profile.universityProfile
+);
+
+setupEmailButton(
+  universityEmailButton,
+  profile.universityEmail
+);
+
+setupEmailButton(
+  personalEmailButton,
+  profile.personalEmail
+);
 }
 
 /* ============================================================
@@ -468,6 +514,20 @@ function setupSocialButton(
     "click",
     function openSocialLink() {
       openExternalLink(url);
+    }
+  );
+}
+function setupEmailButton(button, email) {
+  if (!email) {
+    hideButton(button);
+    return;
+  }
+
+  button.addEventListener(
+    "click",
+    function openEmail() {
+      window.location.href =
+        `mailto:${email}`;
     }
   );
 }
