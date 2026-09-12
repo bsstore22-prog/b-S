@@ -556,6 +556,41 @@ transform: translateY(0);
   background: var(--x-dark);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
 }
+  /* Google Scholar */
+.btn-scholar {
+  background: #4285f4;
+  box-shadow: 0 8px 22px rgba(66, 133, 244, 0.3);
+}
+
+/* LinkedIn */
+.btn-linkedin {
+  background: #0a66c2;
+  box-shadow: 0 8px 22px rgba(10, 102, 194, 0.3);
+}
+
+/* My Website */
+.btn-website {
+  background: #374151;
+  box-shadow: 0 8px 22px rgba(55, 65, 81, 0.3);
+}
+
+/* University Profile */
+.btn-university {
+  background: #8b451f;
+  box-shadow: 0 8px 22px rgba(139, 69, 31, 0.3);
+}
+
+/* University Email */
+.btn-email {
+  background: #c2410c;
+  box-shadow: 0 8px 22px rgba(194, 65, 12, 0.3);
+}
+
+/* Personal Email */
+.btn-personal-email {
+  background: #6b7280;
+  box-shadow: 0 8px 22px rgba(107, 114, 128, 0.3);
+}
 
 /* Hidden buttons */
 
