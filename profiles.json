@@ -61,7 +61,6 @@
   "ahmed_ehab"{
      "name": "Dr Ahmed Ehab Abdelsalam",
     "job": "Lecturer in Architectural Design and Digital Technology Organisation: Loughborough University",
-    "location": "Loughborough University, Loughborough, Leicestershire, LE11 3TU, United Kingdom",
     "image": "images/Ahmed_Ehab.jpg",
     "phone": "+44 7902 392701",
     "phone2": "",
@@ -78,6 +77,5 @@
   "universityProfile": "https://www.lboro.ac.uk/schools/abce/staff/ahmed-ehab-abdelsalam/",
   "universityEmail": "a.abdelsalam@lboro.ac.uk",
   "personalEmail": "aehahmedheab@gmail.com"
-"locationUrl": ""
   }
 }
