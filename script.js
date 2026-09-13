@@ -90,6 +90,12 @@ const universityEmailButton =
 
 const personalEmailButton =
   document.getElementById("personalEmailBtn");
+const vodafoneCashButton = 
+   document.getElementById("vodafoneCashBtn");
+const orangeCashButton =
+   document.getElementById("orangeCashBtn");
+const restaurantLocationButton = 
+   document.getElementById("restaurantLocationBtn");
 
 /* ============================================================
    LOAD PROFILES.JSON
@@ -337,6 +343,13 @@ setupEmailButton(
   personalEmailButton,
   profile.personalEmail
 );
+   setupCashButton(vodafoneCashButton, profile.vodafoneCash);
+setupCashButton(orangeCashButton, profile.orangeCash);
+
+setupSocialButton(
+  restaurantLocationButton,
+  profile.restaurantLocation
+);
 }
 
 /* ============================================================
@@ -530,6 +543,16 @@ function setupEmailButton(button, email) {
         `mailto:${email}`;
     }
   );
+}
+function setupCashButton(button, phone) {
+  if (!phone) {
+    hideButton(button);
+    return;
+  }
+
+  button.addEventListener("click", function () {
+    window.location.href = `tel:${phone}`;
+  });
 }
 
 /* ============================================================
