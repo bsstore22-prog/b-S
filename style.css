@@ -591,6 +591,20 @@ transform: translateY(0);
   background: #6b7280;
   box-shadow: 0 8px 22px rgba(107, 114, 128, 0.3);
 }
+  .btn-vodafone {
+  background: #e60000;
+  box-shadow: 0 8px 22px rgba(230, 0, 0, 0.3);
+}
+
+.btn-orange {
+  background: #ff7900;
+  box-shadow: 0 8px 22px rgba(255, 121, 0, 0.3);
+}
+
+.btn-restaurant-location {
+  background: #b45309;
+  box-shadow: 0 8px 22px rgba(180, 83, 9, 0.3);
+}
 
 /* Hidden buttons */
 
