@@ -91,10 +91,10 @@
   "orangeCash": "01221429854",
   "restaurantLocation": ""
 },
-   "s2": {
+   "s1": {
     "name": " لواء أح / سامر سيد شعبان ",
     "job": "أرئيس فرع العلاقات الخارجية ",
-    "image": "images/im.jpg",
+    "image": "images/im.png",
     "phone": "01155000016",
     "phone2": "",
     "cv": "",
@@ -106,10 +106,10 @@
     "x": ""
      "personalEmail": "internationalrelations@mod.gov.eg",
   },
-  "s1": {
+  "s2": {
     "name": " لواء أح / سيد يس سيد محمد ",
     "job": "رئيس قسم الدول الأوربية ",
-    "image": "images/im.jpg",
+    "image": "images/im.png",
     "phone": "01002958100",
     "phone2": "",
     "cv": "",
@@ -124,7 +124,7 @@
     "s3": {
     "name": "عقيد أح / محمود مصطفى كمال محمود ",
     "job": "رئيس قسم الدول الأفريقية ",
-    "image": "images/im.jpg",
+    "image": "images/im.png",
     "phone": "01005557686",
     "phone2": "",
     "cv": "",
@@ -139,7 +139,7 @@
     "s4": {
     "name": "مقدم / محمد جمال محمد ",
     "job": "رئيس قسم الدول الأسيوية",
-    "image": "images/im.jpg",
+    "image": "images/im.png",
     "phone": "01006597063",
     "phone2": "",
     "cv": "",
@@ -154,7 +154,7 @@
    "s5": {
     "name": "مقدم / محمد كمال الدين تمام ",
     "job": "رئيس قسم الدول العربية",
-    "image": "images/im.jpg",
+    "image": "images/im.png",
     "phone": "01006275551",
     "phone2": "",
     "cv": "",
